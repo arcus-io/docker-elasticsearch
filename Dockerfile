@@ -9,5 +9,6 @@ RUN rm -rf /tmp/*
 
 EXPOSE 9200
 EXPOSE 9300
+VOLUME /opt/elasticsearch/data
 ENTRYPOINT ["/opt/elasticsearch/bin/elasticsearch"]
 CMD ["-f"]
